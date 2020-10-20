@@ -1,0 +1,192 @@
+POST http://localhost:80/clientA/list/logout?CAS-ST=ST-1e248ef5-a3ee-452e-97f6-02ecf28697f1
+Accept: */*
+Cache-Control: no-cache
+
+###
+
+POST http://localhost:80/clientA/list/logout?CAS-ST=ST-71161b9c-d068-433e-b1e6-4c39cef6a7de
+Accept: */*
+Cache-Control: no-cache
+
+###
+
+POST http://localhost:80/clientA/list/logout?CAS-ST=ST-71161b9c-d068-433e-b1e6-4c39cef6a7de
+Accept: */*
+Cache-Control: no-cache
+
+###
+
+POST http://localhost:80/clientA/list/logout?CAS-ST=ST-cc7988b0-79c2-4bee-8c90-57b15ebbc9e7
+Accept: */*
+Cache-Control: no-cache
+
+###
+
+POST http://localhost:80/clientA/list/logout?CAS-ST=ST-cc7988b0-79c2-4bee-8c90-57b15ebbc9e7
+Accept: */*
+Cache-Control: no-cache
+
+###
+
+POST http://localhost:80/clientA/list/logout?CAS-STss=ST-cc7988b0-79c2-4bee-8c90-57b15ebbc9e7
+Accept: */*
+Cache-Control: no-cache
+
+###
+
+POST http://localhost:80/clientA/list/logout?CAS-STss=ST-cc7988b0-79c2-4bee-8c90-57b15ebbc9e7
+Accept: */*
+Cache-Control: no-cache
+
+###
+
+POST http://localhost:80/clientA/list/logout?CAS-ST=ST-fd713b3d-6be0-4398-9690-54b47c0ad66f
+Accept: */*
+Cache-Control: no-cache
+
+<> 2020-10-20T033230.500.html
+
+###
+
+POST http://localhost:80/clientA/list/logout?CAS-ST=ST-fd713b3d-6be0-4398-9690-54b47c0ad66f
+Accept: */*
+Cache-Control: no-cache
+
+<> 2020-10-20T033219.500.html
+
+###
+
+POST http://localhost:80/clientA/list/logout?CAS-ST=ST-2963e609-ee88-44a2-9a58-ab3ae7aad9c9
+Accept: */*
+Cache-Control: no-cache
+
+###
+
+POST http://localhost:80/clientA/list/logout?CAS-ST=ST-c91d11b6-4769-4bb1-8441-cdd544cc5ab8
+Accept: */*
+Cache-Control: no-cache
+
+###
+
+POST http://localhost:80/clientA/list/logout?CAS-ST=ST-c91d11b6-4769-4bb1-8441-cdd544cc5ab8
+Accept: */*
+Cache-Control: no-cache
+
+###
+
+POST http://localhost:80/clientA/list/logout?CAS-ST=ST-4db5b7b5-4521-4c16-a79a-def11cc3ae1f
+Accept: */*
+Cache-Control: no-cache
+
+###
+
+POST http://localhost:80/clientA/list/logout?CAS-ST=ST-4db5b7b5-4521-4c16-a79a-def11cc3ae1f
+Accept: */*
+Cache-Control: no-cache
+
+###
+
+POST http://localhost:80/clientA/list/logout?CAS-ST=ST-8a061aa6-5b12-4c98-b56e-6bd8adb505fe
+Accept: */*
+Cache-Control: no-cache
+
+###
+
+POST http://localhost:80/clientA/list/logout?CAS-ST=ST-8a061aa6-5b12-4c98-b56e-6bd8adb505fe
+Accept: */*
+Cache-Control: no-cache
+
+###
+
+POST http://localhost:80/clientA/list/logout?CAS-ST=ST-8a061aa6-5b12-4c98-b56e-6bd8adb505fe
+Accept: */*
+Cache-Control: no-cache
+
+###
+
+POST http://localhost:80/clientA/list/logout?CAS-ST=ST-8a061aa6-5b12-4c98-b56e-6bd8adb505fe
+Accept: */*
+Cache-Control: no-cache
+
+###
+
+POST http://localhost:80/clientA/list/logout?CAS-ST=ST-8a061aa6-5b12-4c98-b56e-6bd8adb505fe
+Accept: */*
+Cache-Control: no-cache
+
+###
+
+POST http://localhost:80/clientA/list/logout?CAS-ST=TGC-05647fef-e936-4817-8de7-7b4f1eeece38
+Accept: */*
+Cache-Control: no-cache
+
+###
+
+POST http://localhost:80/clientA/list/logout?CAS-ST=asdasdas
+Accept: */*
+Cache-Control: no-cache
+
+###
+
+POST http://localhost:80/clientA/list/logout?CAS-ST=asdasdas
+Accept: */*
+Cache-Control: no-cache
+
+###
+
+POST http://localhost:80/clientA/list/logout?TGC-ST=asdasdas
+Accept: */*
+Cache-Control: no-cache
+
+###
+
+POST http://localhost:80/clientA/list/logout?TGC-ST=asdasdas
+Accept: */*
+Cache-Control: no-cache
+
+###
+
+POST http://localhost:80/clientA/list/logout?TGC-CST=asdasdas
+Accept: */*
+Cache-Control: no-cache
+
+###
+
+POST http://localhost:80/clientA/list/logout?TGC-CST=asdasdas
+Accept: */*
+Cache-Control: no-cache
+
+###
+
+POST http://localhost:80/clientA/list/logout?TGC-CST=asdasdas
+Accept: */*
+Cache-Control: no-cache
+
+###
+
+POST http://localhost:80/clientA/list/logout?TGC-CST=asdasdas
+Accept: */*
+Cache-Control: no-cache
+
+###
+
+POST http://localhost:80/clientA/list/logout?TGC-CST=asdasdas
+Accept: */*
+Cache-Control: no-cache
+
+###
+
+POST http://localhost:80/clientA/logout?TGC-CST=asdasdas
+Accept: */*
+Cache-Control: no-cache
+
+<> 2020-10-20T123213.404.html
+
+###
+
+POST http://localhost:80/clientA?TGC-CST=asdasdas
+Accept: */*
+Cache-Control: no-cache
+
+###
+

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="sso-client-A" />
+        <module name="sso-client-B" />
+        <module name="sso-cas-server" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel target="11">
+      <module name="sso-cas-server" target="11" />
+      <module name="sso-client-A" target="11" />
+      <module name="sso-client-B" target="11" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

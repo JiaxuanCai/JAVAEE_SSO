@@ -1,0 +1,19 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="sso-server2:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/sso_server2_war_exploded</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="sso-cas-server" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="file-copy" path="$PROJECT_DIR$/sso-cas-server/web/WEB-INF/lib/commons-lang-2.4.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/sso-cas-server/web/WEB-INF/lib/commons-httpclient.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/sso-cas-server/web/WEB-INF/lib/commons-logging-1.1.jar" />
+          <element id="library" level="project" name="Maven: mysql:mysql-connector-java:8.0.22" />
+        </element>
+      </element>
+      <element id="javaee-facet-resources" facet="sso-cas-server/web/Web" />
+    </root>
+  </artifact>
+</component>
