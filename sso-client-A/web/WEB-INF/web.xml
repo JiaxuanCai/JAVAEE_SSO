@@ -9,7 +9,7 @@
 
     <filter>
         <filter-name>ssoClientFilter</filter-name>
-        <filter-class>com.cloud.sso.oa.filter.SSOClientFilter</filter-class>
+        <filter-class>edu.cqu.sso.clienta.filter.SSOClientFilter</filter-class>
     </filter>
     <filter-mapping>
         <filter-name>ssoClientFilter</filter-name>
@@ -17,26 +17,26 @@
     </filter-mapping>
 
     <servlet>
-        <servlet-name>list</servlet-name>
-        <servlet-class>com.cloud.sso.oa.servlet.clientServlet</servlet-class>
+        <servlet-name>homepage</servlet-name>
+        <servlet-class>edu.cqu.sso.clienta.servlet.clientServlet</servlet-class>
     </servlet>
     <servlet-mapping>
-        <servlet-name>list</servlet-name>
-        <url-pattern>/list</url-pattern>
+        <servlet-name>homepage</servlet-name>
+        <url-pattern>/</url-pattern>
     </servlet-mapping>
 
     <servlet>
         <servlet-name>logout</servlet-name>
-        <servlet-class>com.cloud.sso.oa.servlet.LogoutServlet</servlet-class>
+        <servlet-class>edu.cqu.sso.clienta.servlet.LogoutServlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>logout</servlet-name>
-        <url-pattern>/list/logout</url-pattern>
+        <url-pattern>/logout</url-pattern>
     </servlet-mapping>
 
     <servlet>
         <servlet-name>logoutSuccess</servlet-name>
-        <servlet-class>com.cloud.sso.oa.servlet.LogoutSuccessServlet</servlet-class>
+        <servlet-class>edu.cqu.sso.clienta.servlet.LogoutSuccessServlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>logoutSuccess</servlet-name>

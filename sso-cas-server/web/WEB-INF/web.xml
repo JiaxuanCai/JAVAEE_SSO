@@ -9,7 +9,7 @@
 
     <filter>
         <filter-name>ssoServerFilter</filter-name>
-        <filter-class>com.cloud.sso.server.filter.SSOServerFilter</filter-class>
+        <filter-class>edu.cqu.sso.server.filter.SSOServerFilter</filter-class>
     </filter>
     <filter-mapping>
         <filter-name>ssoServerFilter</filter-name>
@@ -18,7 +18,7 @@
 
     <servlet>
         <servlet-name>login</servlet-name>
-        <servlet-class>com.cloud.sso.server.controller.LoginServlet</servlet-class>
+        <servlet-class>edu.cqu.sso.server.controller.LoginServlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>login</servlet-name>
@@ -27,7 +27,7 @@
 
     <servlet>
         <servlet-name>ticket</servlet-name>
-        <servlet-class>com.cloud.sso.server.controller.TicketServlet</servlet-class>
+        <servlet-class>edu.cqu.sso.server.controller.TicketServlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>ticket</servlet-name>
@@ -36,7 +36,7 @@
 
     <servlet>
         <servlet-name>logout</servlet-name>
-        <servlet-class>com.cloud.sso.server.controller.LogoutServlet</servlet-class>
+        <servlet-class>edu.cqu.sso.server.controller.LogoutServlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>logout</servlet-name>
