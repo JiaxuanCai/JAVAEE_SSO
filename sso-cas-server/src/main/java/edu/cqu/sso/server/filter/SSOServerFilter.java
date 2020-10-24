@@ -25,14 +25,14 @@ public class SSOServerFilter implements Filter {
     public void doFilter(ServletRequest servletRequest, ServletResponse servletResponse, FilterChain filterChain) throws IOException, ServletException {
         HttpServletRequest request = (HttpServletRequest) servletRequest;
         HttpServletResponse response = (HttpServletResponse) servletResponse;
-        System.out.println("sso filter: " + request.getRequestURI());
+        System.out.println("server filter get URI: " + request.getRequestURI());
         if (request.getRequestURI().contains("logout")){
-            System.out.println("cas logout");
+            System.out.println("server response to logout");
             filterChain.doFilter(request, response);
             return;
         }
         if (request.getRequestURI().contains("user/login")){
-            System.out.println("cas login");
+            System.out.println("server start to login");
             filterChain.doFilter(request, response);
             return;
         }
@@ -45,6 +45,7 @@ public class SSOServerFilter implements Filter {
             for (Cookie cookie : cookies) {
                 if ("CAS-TGC".equals(cookie.getName())) {
                     TGCValue = cookie.getValue();
+                    System.out.println("server get TGC: " + TGCValue);
                     break;
                 }
             }
@@ -64,7 +65,7 @@ public class SSOServerFilter implements Filter {
                 JVMCache.ST_CACHE.put(STValue, STValue);
                 // 注册成功，在浏览器和cas服务器见建立信任，缓存url用于退出
                 TGT.serviceMap.put(STValue, service);
-                System.out.println("ServiceMap " + TGT.serviceMap.get(STValue));
+                System.out.println("server put into service map, value: " + TGT.serviceMap.get(STValue));
                 // 如果需要跳转，在url上附加ST ticket
                 String url = RedirectUtil.getRedirectUrlWithTicket(service, STValue);
                 response.sendRedirect(url);

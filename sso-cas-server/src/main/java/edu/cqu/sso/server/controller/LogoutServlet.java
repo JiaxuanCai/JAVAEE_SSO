@@ -22,12 +22,11 @@ public class LogoutServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
         HttpSession session = request.getSession();
-        String clientToken = (String) session.getAttribute("CAS-ST");
-        System.out.println("server: " + clientToken);
         String logoutUrl = request.getParameter("service");
         // 主动退出
         // 向认证中心发送注销请求
-        System.out.println("CAS logout start");
+        System.out.println("------------------------");
+        System.out.println("server start to logout");
         System.out.println(request.getRequestURL());
         String logoutInterfaceUrl = "/logout";
         String TGTId = "";
@@ -37,19 +36,20 @@ public class LogoutServlet extends HttpServlet {
                 System.out.println(cookie.getName());
                 if ("CAS-TGC".equals(cookie.getName())) {
                     TGTId = cookie.getValue();
+
                     break;
                 }
             }
         }
-        System.out.println("server get CAS-TGC: " + TGTId);
+        System.out.println("server get TGC: " + TGTId);
         TicketGrangtingTicket TGT = JVMCache.TGT_CACHE.get(TGTId);
         for(Map.Entry<String, String> entry : TGT.serviceMap.entrySet()){
             String ST = entry.getKey();
             String service = entry.getValue();
-            System.out.println("ST= " + ST);
+            System.out.println("server request ST: " + ST);
             // 通知service logout
             PostMethod postMethod = new PostMethod(service + logoutInterfaceUrl);
-            System.out.println("post to: " + service + logoutInterfaceUrl);
+            System.out.println("server post logout to: " + service + logoutInterfaceUrl);
             postMethod.addParameter("CAS-ST", ST);
             HttpClient httpClient = new HttpClient();
             try {

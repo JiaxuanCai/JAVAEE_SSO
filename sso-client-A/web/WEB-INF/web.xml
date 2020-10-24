@@ -22,9 +22,12 @@
     </servlet>
     <servlet-mapping>
         <servlet-name>homepage</servlet-name>
+        <url-pattern>/home</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>homepage</servlet-name>
         <url-pattern>/</url-pattern>
     </servlet-mapping>
-
     <servlet>
         <servlet-name>logout</servlet-name>
         <servlet-class>edu.cqu.sso.clienta.servlet.LogoutServlet</servlet-class>

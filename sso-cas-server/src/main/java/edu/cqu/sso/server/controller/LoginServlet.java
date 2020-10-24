@@ -42,6 +42,7 @@ public class LoginServlet extends HttpServlet {
         String TGCValue = "TGC-" + uuid;
         Cookie cookie = new Cookie("CAS-TGC", TGCValue);
         cookie.setPath("/");
+        System.out.println("server set cookie CAS-TGC: " + TGCValue);
         response.addCookie(cookie);
 
         // 缓存TGT
@@ -54,7 +55,7 @@ public class LoginServlet extends HttpServlet {
         JVMCache.ST_CACHE.put(STValue, username);
         // 注册成功，在浏览器和cas服务器见建立信任，缓存url用于退出
         TGT.serviceMap.put(STValue, service);
-        System.out.println("put TGT: " + TGT.serviceMap.get(STValue));
+        System.out.println("server store TGT, id: " + TGT.serviceMap.get(STValue));
         // 判断service跳转情况
         if (null != service) {
             String url = RedirectUtil.getRedirectUrlWithTicket(service, STValue);

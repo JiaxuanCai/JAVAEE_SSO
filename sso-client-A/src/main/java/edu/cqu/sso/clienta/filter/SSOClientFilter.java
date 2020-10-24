@@ -57,7 +57,7 @@ public class SSOClientFilter implements Filter {
 //                    Cache.map.put("CAS-ST", ticket);
                     Cache.sessionMap.put(ticket, session);
                     System.out.println("put into map: key CAS-ST, value " + ticket);
-                    response.sendRedirect("list");
+                    response.sendRedirect("home");
                 } else {
                     response.sendRedirect("http://localhost:8088/index.jsp?service=" + url);
                 }
