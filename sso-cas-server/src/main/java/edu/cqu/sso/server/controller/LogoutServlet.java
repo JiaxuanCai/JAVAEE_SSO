@@ -60,13 +60,14 @@ public class LogoutServlet extends HttpServlet {
             }
         }
         // 注销后重定向
-//        response.sendRedirect(logoutUrl);
+
 
         // 注销本地会话
         TicketGrangtingTicket removedTGT = JVMCache.TGT_CACHE.remove(TGTId);
         if (removedTGT != null) {
             session.removeAttribute("CAS-TGC");
         }
+        response.sendRedirect(logoutUrl);
 
     }
 }

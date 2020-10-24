@@ -13,8 +13,7 @@
 <form action="/user/login" method="post">
     userName: <input type="text" name="username"/> <br>
     password: <input type="text" name="password"/> <br>
-    service: <input type="hidden" name="service" value="<%=service%>"/> <br>
-    rememberMe: <input type="checkbox" value="on" name="rememberMe" >
+    <input type="hidden" name="service" value="<%=service%>"/> <br>
     <input type="submit" value="submit"/>
 </form>
 </body>

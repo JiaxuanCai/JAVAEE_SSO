@@ -26,7 +26,7 @@ public class LogoutServlet extends HttpServlet {
         System.out.println("clientB get ST: " + ST);
         if (ST == null || "".equals(ST)){ // 说明是主动退出
             System.out.println("client B request to logout");
-            response.sendRedirect("http://localhost:8088/logout?service=" + url);
+            response.sendRedirect("http://localhost:8088/logout?service=" + url + "Success");
 //            PostMethod postMethod = new PostMethod("http://localhost:8088/logout?service=" + url);
 //            HttpClient httpClient = new HttpClient();
 //            try {
