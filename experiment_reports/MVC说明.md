@@ -7,7 +7,7 @@
 
 文件树
 
-<img src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20201025190844073.png" alt="image-20201025190844073" style="zoom:33%;" />
+![avatar](arch.png)
 
 ### model
 
