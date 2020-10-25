@@ -17,7 +17,7 @@ import edu.cqu.sso.server.model.TicketGrangtingTicket;
 import edu.cqu.sso.server.storage.JVMCache;
 import edu.cqu.sso.server.util.RedirectUtil;
 
-public class SSOServerFilter implements Filter {
+public class ServerFilter implements Filter {
 
     public void destroy() {
     }
